@@ -7,7 +7,8 @@ const List<String> videoFormats = [
   '.3gp',
   '.3gpp',
   '.mkv',
-  '.flv'
+  '.flv',
+  'm4v'
 ];
 const List<String> imageFormats = [
   '.jpeg',
@@ -18,6 +19,15 @@ const List<String> imageFormats = [
   '.tif',
   '.heic'
 ];
+
+const List<String> filesFormat = [
+  '.txt',
+  '.srt',
+  '.vtt',
+  '.dfxp',
+  '.sbc',
+];
+
 const http = 'http';
 
 bool isLocalFilePath(String path) {
@@ -37,6 +47,14 @@ bool isImage(String path) {
   bool output = false;
   imageFormats.forEach((imageFormat) {
     if (path.toLowerCase().contains(imageFormat)) output = true;
+  });
+  return output;
+}
+
+bool isFile(String path) {
+  bool output = false;
+  filesFormat.forEach((fileFormat) {
+    if (path.toLowerCase().contains(fileFormat)) output = true;
   });
   return output;
 }
