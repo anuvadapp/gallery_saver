@@ -25,7 +25,7 @@ const List<String> filesFormat = [
   '.srt',
   '.vtt',
   '.dfxp',
-  '.sbc'
+  '.sbv'
 ];
 
 const http = 'http';
