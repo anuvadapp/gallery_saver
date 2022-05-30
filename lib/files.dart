@@ -8,7 +8,7 @@ const List<String> videoFormats = [
   '.3gpp',
   '.mkv',
   '.flv',
-  'm4v'
+  '.m4v'
 ];
 const List<String> imageFormats = [
   '.jpeg',
@@ -25,7 +25,7 @@ const List<String> filesFormat = [
   '.srt',
   '.vtt',
   '.dfxp',
-  '.sbc',
+  '.sbc'
 ];
 
 const http = 'http';
